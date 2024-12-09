@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .slider {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            overflow: hidden;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            display: block;
+        }
+
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .controls button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .controls button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <img src="C:\Users\alima\Desktop\Жетісай дарын\ilovepdf_pages-to-jpg (4)\JETISAY_page-0001.jpg" width="700" height="500" class="center" >
+     <br>
+     <img src="C:\Users\alima\Desktop\Жетісай дарын\ilovepdf_pages-to-jpg (4)\JETISAY_page-0002.jpg" width="700" height="500" class="center" >
+      <div class="slider">
+        <div class="slides">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155140.png" alt="Slide 1">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155154.png" alt="Slide 2">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155203.png" alt="Slide 3">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155213.png" alt="Slide 4">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155441.png" alt="Slide 5">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155508.png" alt="Slide 6">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155538.png" alt="Slide 7">
+	    <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155557.png" alt="Slide 8">
+	    <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155610.png" alt="Slide 9">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155623.png" alt="Slide 10">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155633.png" alt="Slide 11">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155645.png" alt="Slide 12">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155657.png" alt="Slide 13">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155707.png" alt="Slide 14">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155712.png" alt="Slide 15">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155718.png" alt="Slide 16">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155726.png" alt="Slide 17">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155734.png" alt="Slide 18">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155741.png" alt="Slide 19">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155750.png" alt="Slide 20">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155800.png" alt="Slide 21">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155811.png" alt="Slide 22">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155821.png" alt="Slide 23">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155830.png" alt="Slide 24">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155839.png" alt="Slide 25">
+            <img src="C:\Users\alima\Desktop\Жетісай дарын\img\Снимок экрана 2024-12-09 155848.png" alt="Slide 26">
+        </div>
+        <div class="controls">
+            <button id="prev">‹</button>
+            <button id="next">›</button>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelector('.slides');
+        const images = document.querySelectorAll('.slides img');
+        const prevBtn = document.getElementById('prev');
+        const nextBtn = document.getElementById('next');
+
+        let index = 0;
+
+        function showSlide(newIndex) {
+            index = (newIndex + images.length) % images.length; // Зацикливание
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prevBtn.addEventListener('click', () => showSlide(index - 1));
+        nextBtn.addEventListener('click', () => showSlide(index + 1));
+    </script>
+</body>
+</html>
